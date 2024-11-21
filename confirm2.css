@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* 共有スタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ボックスモデルの計算を簡略化 */
+    font-family: Arial, sans-serif; /* フォントの指定 */
+}
+
+
+.confirm {
+    padding: 70px 0;
+    background-image: url('images/空背景.png'); /* 作成した背景画像のパス */
+    background-size: cover; /* 画像を全体に広げる */
+    background-position: center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返さない */
+    text-align: center;
+}
+
+.confirm .container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.confirm-title {
+    margin-top: 40px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.confirmArea {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.subjectArea, .workArea, .responseArea {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+span {
+    font-weight: bold;
+    color: #555;
+}
+
+.subject, .work, .response {
+    margin: 10px 0 0;
+    color: #333;
+}
+
+.response{
+    display: none;
+}
+
+
+.responseArea button{
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.responseArea button:hover{
+    background-color: gray;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}

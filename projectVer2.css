@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* 共有スタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Main Visual */
+.main-visual {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    background-image: url('images/空背景.png'); /* 作成した背景画像のパス */
+    background-size: cover; /* 画像を全体に広げる */
+    background-position: center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返さない */
+    text-align: center;
+    color: #333;
+}
+
+.top-title {
+    font-size: 64px;
+    color: #333;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.top-text {
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* List Section */
+.list {
+    margin-top: 20px;
+}
+
+.list a {
+    color: black;
+    font-size: 16px;
+}
+
+.list a:hover {
+    background-color: #e2f1ff;
+}
+
+h2{
+    text-align: center;
+    color: #333;
+    font-size: 50px;
+}
+
+.howUse{
+    padding: 90px 0 60px;
+    color: white;
+    background-image: url('images/空背景.png'); /* 作成した背景画像のパス */
+    background-size: cover; /* 画像を全体に広げる */
+    background-position: center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返さない */
+    text-align: center;
+}
+.howUse-card{
+    width: 25%;
+    margin-top: 35px;
+}
+.how-use-inner{
+    padding: 25px 30px;
+    background-color: #dbe0e4;
+    border-radius: 7px;         /*角を丸める*/
+    box-shadow: 1px 1px 4px #d2d4d6;
+    text-align: center;         /*中央ぞろえ*/
+    margin: 0 20px;
+}
+.howUse-image{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;         /*角を丸める*/
+}
+.howUse-title{
+    margin-bottom: 8px;
+}
+.howUse-text{
+    font-size: 14px;
+}
+.how-use-wrapper{
+    display: flex;          /*felxで横並びにする*/
+    flex-wrap: wrap;        /*無理やり一列に並べるため適宜折り返しして表示*/
+}

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* 共有スタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    height: 56px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+}
+
+.header-right {
+    float: right; /* このクラスを右に表示 */
+    margin-top: 15px;
+}
+
+.clear {
+    clear: both; /* 左右分割をクリア */
+}
+
+.header-right a {
+    color: #5a5c5f;
+    font-size: 16px;
+}
+
+.header-right a:hover {
+    background-color: #e2f1ff;
+}

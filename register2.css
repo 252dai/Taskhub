@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* 共有スタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ボックスモデルの計算を簡略化 */
+    font-family: Arial, sans-serif; /* フォントの指定 */
+}
+
+.register {
+    background-image: url('images/空背景.png'); /* 作成した背景画像のパス */
+    background-size: cover; /* 画像を全体に広げる */
+    background-position: center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返さない */
+    text-align: center;
+    padding: 20px; /* 内部余白を設定 */
+    padding-top: 50px;
+
+}
+
+.register-title {
+    font-size: 40px; /* タイトルのフォントサイズ */
+    color: #333; /* タイトルの色 */
+    text-align: center; /* タイトルを中央揃え */
+    margin-top: 56px;
+    margin-bottom: 20px; /* 下部の余白を設定 */
+
+}
+
+.form-groupA,
+.form-groupB,
+.form-groupC,
+.form-groupD {
+    margin-bottom: 20px; /* 各フォームグループの下部余白 */
+}
+
+label {
+    font-size: 16px; /* ラベルのフォントサイズ */
+    color: #555; /* ラベルの色 */
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* 幅を100%に設定 */
+    padding: 10px; /* 内部余白を設定 */
+    font-size: 16px; /* フォントサイズ */
+    border-radius: 4px; /* 角を丸める */
+}
+
+textarea {
+    min-height: 100px; /* 最小の高さを設定 */
+}
+
+.submit-button {
+    width: 100%; /* 幅を100%に設定 */
+    padding: 12px; /* 内部余白を設定 */
+    padding-top: 20px;
+    margin-top: 20px;
+    background-color: #45a049; /* ボタンの背景色 */
+    color: white; /* ボタンの文字色 */
+    border-radius: 4px; /* 角を丸める */
+    font-size: 16px; /* フォントサイズ */
+}
+
+.submit-button:hover {
+    background-color: #367a36; /* ホバー時の背景色を変更 */
+}
