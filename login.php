@@ -19,13 +19,19 @@ if($_POST){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
     <title>ログインフォーム</title>
 </head>
 <body>
-    <form action="login.php" method="post">
-        ユーザ名 : <input type ="name" name = "username" value=""><br>
-        パスワード : <input type ="password" name = "passWord" value=""><br>
-        <input type="submit" name="login" value= "ログイン"/>
-    </form>
+    <div class="login">
+        <form action="login.php" method="post">
+            <h1>Sign in</h1>
+            <label>ユーザ名</label> 
+            <input type="text" name="username" value=""><br>
+            <label>パスワード</label>
+            <input type="password" name="password" value=""><br>
+            <input type="submit" name="register" value="登録">
+        </form>
+    </div>
 </body>
 </html>

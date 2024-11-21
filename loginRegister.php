@@ -19,6 +19,13 @@ if ($_POST) {
         $errMess[] = "確認用パスワードが一致しません";
     }
 
+    $userfile = "../uesrinfo.txt";
+    if(!$errMess){
+        $ph = password_hash($_POST['password'], algo: PASSWORD_DEFAULT);
+        $line = '"' . $_POST['username'] . '","' .$ph . '"' . "\n";
+        $ret = file_put_contents($userfile, $line, flags: FILE_APPEND);
+    }
+
     // エラーがなければリダイレクト
     if (!$errMess) {
         $host = $_SERVER['HTTP_HOST'];
@@ -34,9 +41,10 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新規登録</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <h1>新規登録</h1>
+    
     <?php
     if ($errMess) {
         echo '<div class="alert alert-danger" role="alert">';
@@ -44,11 +52,17 @@ if ($_POST) {
         echo '</div>';
     }
     ?>
-    <form action="" method="post">
-        ユーザ名 : <input type="text" name="username" value=""><br>
-        パスワード : <input type="password" name="password" value=""><br>
-        パスワード(確認) : <input type="password" name="password2" value=""><br>
-        <input type="submit" name="register" value="登録">
-    </form>
+    <div class="login">
+        <form action="" method="post">
+            <h1>Sign up</h1>
+            <label>ユーザ名</label> 
+            <input type="text" name="username" value=""><br>
+            <label>パスワード</label>
+            <input type="password" name="password" value=""><br>
+            <label>パスワード(確認)</label>
+            <input type="password" name="password2" value=""><br>
+            <input type="submit" name="register" value="登録">
+        </form>
+    </div>
 </body>
 </html>
