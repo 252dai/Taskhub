@@ -11,14 +11,17 @@
 
 /* Main Visual */
 .main-visual {
-    padding-top: 140px;
+    padding-top: 200px;
     padding-bottom: 100px;
-    background-image: url('images/空背景.png'); /* 作成した背景画像のパス */
+    background-image: url('images/blue.png'); /* 作成した背景画像のパス */
     background-size: cover; /* 画像を全体に広げる */
     background-position: center; /* 中央に配置 */
     background-repeat: no-repeat; /* 繰り返さない */
     text-align: center;
     color: #333;
+    margin: 0 20px;
+    border-radius: 20px 20px 0 0;
+    border: #333;
 }
 
 .top-title {
@@ -61,20 +64,23 @@ h2{
 
 .howUse{
     padding: 90px 0 60px;
+    margin: 0 20px;
     color: white;
-    background-image: url('images/空背景.png'); /* 作成した背景画像のパス */
+    background-image: url('images/blue.png'); /* 作成した背景画像のパス */
     background-size: cover; /* 画像を全体に広げる */
     background-position: center; /* 中央に配置 */
     background-repeat: no-repeat; /* 繰り返さない */
     text-align: center;
+    
 }
 .howUse-card{
-    width: 25%;
+    width: 33%;
     margin-top: 35px;
 }
+
 .how-use-inner{
     padding: 25px 30px;
-    background-color: #dbe0e4;
+    background-color: lightblue;
     border-radius: 7px;         /*角を丸める*/
     box-shadow: 1px 1px 4px #d2d4d6;
     text-align: center;         /*中央ぞろえ*/
@@ -94,4 +100,22 @@ h2{
 .how-use-wrapper{
     display: flex;          /*felxで横並びにする*/
     flex-wrap: wrap;        /*無理やり一列に並べるため適宜折り返しして表示*/
+}
+footer{
+    height: 56px;
+    margin: 0 20px;
+    background-color:black ;
+    
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+}
+footer p{
+    color: white;
+    opacity: 0.7;
+}
+.logout{
+    text-align: center;
+    color: white; 
+    text-transform: uppercase;
+    font-size: 18px;
 }

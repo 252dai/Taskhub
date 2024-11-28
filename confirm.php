@@ -1,5 +1,11 @@
 <?php
-
+session_start();
+if(!isset($_SESSION['username'])){
+    $host = $_SERVER['HTTP_HOST'];
+    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+    header("Location: login.php");
+    exit;
+}
 $comment_array = array();
 
 
@@ -56,11 +62,13 @@ $pdo = null;
                         <div class="workArea">
                             <span>課題</span>
                             <p class="work"><?php echo $comment["work"];?></p>
+                            <img src="data:image/*;base64,<?php echo base64_encode($comment['imagework']); ?>" class="imageFileA" alt=" ">
                         </div>
                         <div class="responseArea">
                             <span>回答</span>
                             <button onclick="toggleResponse(this)">表示</button>
                             <p class="response"><?php echo $comment["response"];?></p>
+                            <img src="data:image/*;base64,<?php echo base64_encode($comment['imageRep']); ?>" class="imageFileB" alt=" ">
                         </div>
                         <hr>
                     </article>
@@ -70,12 +78,17 @@ $pdo = null;
 
             <script>
                 function toggleResponse(button){
-                    const response = button.nextElementSibling;
-                    if(response.style.display === "none"){
+                    const article = button.closest('article');
+                    const response = article.querySelector('.response');
+                    const imageFileB = article.querySelector('.imageFileB');
+
+                    if((response.style.display === "none") || (imageFileB.style.display === "none")){
                         response.style.display = "block";
+                        imageFileB.style.display = "block";
                         button.textContent = "非表示";
                     }else{
                         response.style.display = "none";
+                        imageFileB.style.display = "none";
                         button.textContent = "表示";
                     }
                 }

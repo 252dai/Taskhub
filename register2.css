@@ -1,68 +1,85 @@
-@charset "UTF-8";
-
-/* 共有スタイル */
-* {
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* ボックスモデルの計算を簡略化 */
-    font-family: Arial, sans-serif; /* フォントの指定 */
+    list-style: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #f5f5f5;
+    line-height: 1.6;
 }
 
+
+/* Register Form Styles */
 .register {
-    background-image: url('images/空背景.png'); /* 作成した背景画像のパス */
-    background-size: cover; /* 画像を全体に広げる */
-    background-position: center; /* 中央に配置 */
-    background-repeat: no-repeat; /* 繰り返さない */
-    text-align: center;
-    padding: 20px; /* 内部余白を設定 */
-    padding-top: 50px;
-
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #2a2a40;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-
 .register-title {
-    font-size: 40px; /* タイトルのフォントサイズ */
-    color: #333; /* タイトルの色 */
-    text-align: center; /* タイトルを中央揃え */
-    margin-top: 56px;
-    margin-bottom: 20px; /* 下部の余白を設定 */
-
+    text-align: center;
+    color: #87cefa;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.form-groupA,
-.form-groupB,
-.form-groupC,
-.form-groupD {
-    margin-bottom: 20px; /* 各フォームグループの下部余白 */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-groupA, .form-groupB, .form-groupC, .form-groupD, .form-groupE, .form-groupF {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    font-size: 16px; /* ラベルのフォントサイズ */
-    color: #555; /* ラベルの色 */
+    margin-bottom: 5px;
+    color: #87cefa;
+    font-weight: bold;
 }
 
-input[type="text"],
-textarea {
-    width: 100%; /* 幅を100%に設定 */
-    padding: 10px; /* 内部余白を設定 */
-    font-size: 16px; /* フォントサイズ */
-    border-radius: 4px; /* 角を丸める */
+input[type="text"], textarea {
+    background-color: #4c4c6d;
+    color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
 }
 
-textarea {
-    min-height: 100px; /* 最小の高さを設定 */
+input[type="file"] {
+    margin-top: 5px;
+}
+
+.workTextArea, .responseTextArea {
+    resize: vertical;
+    min-height: 100px;
 }
 
 .submit-button {
-    width: 100%; /* 幅を100%に設定 */
-    padding: 12px; /* 内部余白を設定 */
-    padding-top: 20px;
-    margin-top: 20px;
-    background-color: #45a049; /* ボタンの背景色 */
-    color: white; /* ボタンの文字色 */
-    border-radius: 4px; /* 角を丸める */
-    font-size: 16px; /* フォントサイズ */
+    background: linear-gradient(45deg, #6a5acd, #483d8b);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.submit-button:hover {
+    background: linear-gradient(45deg, #483d8b, #6a5acd);
+    transform: scale(1.05);
+}
+.submit-button:active {
+    transform: scale(0.95);
 }
 
-.submit-button:hover {
-    background-color: #367a36; /* ホバー時の背景色を変更 */
-}

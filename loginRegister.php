@@ -19,7 +19,21 @@ if ($_POST) {
         $errMess[] = "確認用パスワードが一致しません";
     }
 
-    $userfile = "../uesrinfo.txt";
+    
+    $userfile ='../userinfo.txt';
+    $users = array();
+    if(file_exists($userfile)){
+        $users = file_get_contents($userfile);
+        $users = explode("\n",$users);
+        foreach($users as $k => $v){
+            $v_ary = str_getcsv($v);
+            if($v_ary[0] == $_POST['username']){
+                $errMess[] = "そのユーザーはすでに登録されています";
+                break;
+            } 
+        }
+    }
+    // 新規ユーザー登録処理
     if(!$errMess){
         $ph = password_hash($_POST['password'], algo: PASSWORD_DEFAULT);
         $line = '"' . $_POST['username'] . '","' .$ph . '"' . "\n";
@@ -45,15 +59,16 @@ if ($_POST) {
 </head>
 <body>
     
-    <?php
+    
+    <div class="login">
+        <form action="" method="post">
+        <?php
     if ($errMess) {
         echo '<div class="alert alert-danger" role="alert">';
         echo implode('<br>', $errMess);
         echo '</div>';
     }
     ?>
-    <div class="login">
-        <form action="" method="post">
             <h1>Sign up</h1>
             <label>ユーザ名</label> 
             <input type="text" name="username" value=""><br>
