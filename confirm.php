@@ -16,10 +16,17 @@ try{
     echo $e->getMessage();
 }
 
+
 //DBからコメントデータを取得する
 $sql = "SELECT * FROM `project01-table`;";
 $comment_array = $pdo->query($sql);
 
+if (isset($_POST['deleteButton'])) {
+    $delete_id = $_POST['delete_id'];
+    $stmt = $pdo->prepare("DELETE FROM `project01-table` WHERE id = :id");
+    $stmt->bindParam(':id', $delete_id, PDO::PARAM_INT);
+    $stmt->execute();
+}
 //DBの接続を閉じる
 $pdo = null;
 
@@ -70,6 +77,10 @@ $pdo = null;
                             <p class="response"><?php echo $comment["response"];?></p>
                             <img src="data:image/*;base64,<?php echo base64_encode($comment['imageRep']); ?>" class="imageFileB" alt=" ">
                         </div>
+                        <form method= "POST" >
+                            <input type = "hidden" name="delete_id" value="<?php echo $comment['id']; ?>">
+                            <button type="submit" class="delete-button" name="deleteButton">削除</button>
+                        </form>
                         <hr>
                     </article>
                     <?php endforeach; ?>

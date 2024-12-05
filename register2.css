@@ -1,25 +1,44 @@
 /* Reset CSS */
-body, h1, h2, h3, p, ul, li {
+*{
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style: none; /*リストがテキストのように見えるようになる*/
 }
 body {
     font-family: Arial, sans-serif;
     background-color: #1e1e2f;
     color: #f5f5f5;
-    line-height: 1.6;
+    line-height: 1.6; /*行間の高さがフォントの1.6倍*/
 }
 
 
 /* Register Form Styles */
 .register {
-    margin-top: 20px;
+    margin: 20px 13px;
     padding: 20px;
     background-color: #2a2a40;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+.alert {
+    padding: 15px; /* 内側の余白 */
+    margin: 10px 0; /* 上下の間隔 */
+    border: 1px solid #f5c2c7; /* 境界線の色 */
+    background-color: #f8d7da; /* 背景色（薄い赤） */
+    color: #842029; /* テキスト色（濃い赤） */
+    border-radius: 5px; /* 角を丸くする */
+    font-size: 16px; /* フォントサイズ */
+    display: flex; /* アイコンとテキストを横並びに */
+    align-items: center; /* 縦の中央揃え */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 軽い影 */
+}
+
+.alert::before {
+    content: "⚠️"; /* アイコンを追加 */
+    font-size: 20px; /* アイコンのサイズ */
+    margin-right: 10px; /* テキストとの余白 */
+}
+
 .register-title {
     text-align: center;
     color: #87cefa;
@@ -29,20 +48,20 @@ body {
 }
 
 .register-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    display: flex; /*アイテムを横または縦並べにする*/
+    flex-direction: column; /*縦並びする*/
+    gap: 15px; /*上二つのアイテム同士の感覚が15pxある*/
 }
 
 .form-groupA, .form-groupB, .form-groupC, .form-groupD, .form-groupE, .form-groupF {
-    display: flex;
-    flex-direction: column;
+    display: flex; /*アイテムを横または縦並べにする*/
+    flex-direction: column; /*上二つのアイテム同士の感覚が15pxある*/
 }
 
 label {
     margin-bottom: 5px;
     color: #87cefa;
-    font-weight: bold;
+    font-weight: bold; /*文字を太くする*/
 }
 
 input[type="text"], textarea {
@@ -52,34 +71,52 @@ input[type="text"], textarea {
     border-radius: 5px;
     border: none;
     font-size: 1rem;
-    outline: none;
+    outline: none; /*フォーカスをした時のアウトラインを消す*/
 }
-
+.form-groupE .form-groupF{
+    background: #6a5acd;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; /*ポインターに変わる*/
+    border-radius: 5px;
+}
 input[type="file"] {
-    margin-top: 5px;
+    background-color: #4c4c6d; /* ダークな背景色 */
+    color: #f5f5f5; /* 白い文字 */
+    border: none; /* 境界線をなくす */
+    padding: 10px; /* 内側の余白 */
+    border-radius: 5px; /* 角を丸くする */
+    cursor: pointer; /* ホバー時にポインター表示 */
+    font-size: 1rem; /* フォントサイズを統一 */
+    outline: none; /* フォーカス時のアウトラインを消す */
+    margin-top: 5px; /* 上に少し余白 */
 }
-
+input[type="file"]::file-selector-button {
+    background-color: #6a5acd; /* ボタンの背景色 */
+    color: white; /* ボタンの文字色 */
+    padding: 5px 10px; /* ボタン内側の余白 */
+    border: none; /* 境界線をなくす */
+    border-radius: 5px; /* 角を丸くする */
+    cursor: pointer; /* ポインター表示 */
+    font-size: 1rem; /* フォントサイズを統一 */
+}
+input[type="file"]::file-selector-button:hover {
+    background-color: #836fff; /* ホバー時の色 */
+}
 .workTextArea, .responseTextArea {
-    resize: vertical;
+    resize: vertical; /*TextAreaに入りきらなくスクロールするようになっても、上下の幅は変わらない*/
     min-height: 100px;
 }
 
 .submit-button {
-    background: linear-gradient(45deg, #6a5acd, #483d8b);
+    background: #6a5acd;
     border: none;
     color: white;
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
-    cursor: pointer;
+    cursor: pointer; /*ポインターに変わる*/
     border-radius: 5px;
-    transition: background 0.3s ease, transform 0.2s ease;
 }
-.submit-button:hover {
-    background: linear-gradient(45deg, #483d8b, #6a5acd);
-    transform: scale(1.05);
-}
-.submit-button:active {
-    transform: scale(0.95);
-}
+
 

@@ -20,35 +20,35 @@ if(!isset($_SESSION['username'])){
     <div class="header">
         <div class="container">
             <div class="header-right">
-                <a href="projectVer1.php">トップ<a>
-                <a href="register.php">登録<a>
-                <a href="confirm.php">確認<a>
+                <a href="projectVer1.php">トップ</a>
+                <a href="register.php">登録</a>
+                <a href="confirm.php">確認</a>
             </div>
             <div class="clear"></div>
         </div>
     </div>
     <div class="main-visual">
         <div class="container">
-            <h1 class="top-title">課題を復習しよう</h1><br>
+            <h1 class="top-title">課題を復習しよう</h1>
             <p class="top-text">
                 課題と回答を保存して
                 <br>
                 好きな時に見返そう！！！
             </p>
             <div class="list">
-                <a href="projectVer1.php">トップ<a>
-                <a href="register.php">登録<a>
-                <a href="confirm.php">確認<a>
+                <a href="projectVer1.php">トップ</a>
+                <a href="register.php">登録</a>
+                <a href="confirm.php">確認</a>
             </div>
         </div>
     </div>
     <div class="howUse">
             <div class="container">
-                <h2>使用方法</h2>
+                <h2>How to Taskhub</h2>
                 <div class="how-use-wrapper">         <!--カードを囲む要素-->
                     <div class="howUse-card"><!--1枚目-->         <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/registerSample.png" alt="使い方1">
+                            <img class="howUse-image" src="images/aicon1.png" alt="使い方1">
                             <a href="register.php" class="howUse-title">課題保存</a>
                             <p class="howUse-text">
                                 課題保存のやり方
@@ -59,7 +59,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="howUse-card">  <!--2枚目-->       <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/confirmSample.png" alt="使い方1">
+                            <img class="howUse-image" src="images/aicon2.png" alt="使い方1">
                             <a href="confirm.php" class="howUse-title">回答の確認</a>
                             <p class="howUse-text">
                                 回答確認のやり方

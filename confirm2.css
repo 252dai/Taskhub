@@ -13,7 +13,7 @@ body {
 
 /* Confirm Section Styles */
 .confirm {
-    margin-top: 20px;
+    margin: 20px 13px;
     padding: 20px;
     background-color: #2a2a40;
     border-radius: 10px;
@@ -42,11 +42,6 @@ hr {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.confirmArea article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 .subjectArea, .workArea, .responseArea {
     margin-bottom: 15px;
@@ -67,19 +62,15 @@ hr {
 .response{
     display: none;
 }
-.width{
-    display: flex;          /*felxで横並びにする*/
-    flex-wrap: wrap;        /*無理やり一列に並べるため適宜折り返しして表示*/
+
+.imageFileB{
+display: none;
 }
 .imageFileA, .imageFileB {
     max-width: 100%;
     margin-top: 10px;
     width: 50%;
     border-radius: 5px;
-    border: 2px solid #87cefa;
-}
-.imageFileB{
-display: none;
 }
 /* Button Styles */
 button {
@@ -91,27 +82,4 @@ button {
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-button:hover {
-    background: linear-gradient(45deg, #483d8b, #6a5acd);
-    transform: scale(1.05);
-}
-button:active {
-    transform: scale(0.95);
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .confirmArea section {
-        flex-direction: column;
-    }
-    .header .header-right {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .header .header-right a {
-        margin: 5px 10px;
-    }
 }

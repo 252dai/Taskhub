@@ -1,4 +1,7 @@
 
+body{
+    background-color: white;
+}
 .login{
     border: 1px solid black;
     background: url(images/空背景.png);
@@ -72,7 +75,8 @@ form a{
     border-radius: 5px; /* 角を丸くする */
     font-size: 16px; /* フォントサイズ */
     display: flex; /* アイコンとテキストを横並びに */
-    align-items: center; /* 縦の中央揃え */
+    justify-content: center; /* 水平中央に配置 */
+    align-items: center; /* 垂直中央に配置 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 軽い影 */
 }
 
