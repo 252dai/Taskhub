@@ -48,67 +48,67 @@ if(!isset($_SESSION['username'])){
                 <div class="how-use-wrapper">         <!--カードを囲む要素-->
                     <div class="howUse-card"><!--1枚目-->         <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/aicon1.png" alt="使い方1">
-                            <a href="register.php" class="howUse-title">課題保存</a>
+                            <img class="howUse-image" src="images/home2.png" alt="home">
+                            <a href="projectVer1.php" class="howUse-title">ホームページ</a>
                             <p class="howUse-text">
-                                課題保存のやり方
+                                このサイトの使い方
                                 <br>
-                                教科・課題・回答欄に書く！！
+                                いろいろかいてあるよ！！
                             </p>
                         </div>
                     </div>
                     <div class="howUse-card">  <!--2枚目-->       <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/aicon2.png" alt="使い方1">
-                            <a href="confirm.php" class="howUse-title">回答の確認</a>
+                            <img class="howUse-image" src="images/aicon1.png" alt="投稿">
+                            <a href="register.php" class="howUse-title">課題・回答投稿</a>
                             <p class="howUse-text">
-                                回答確認のやり方
+                                課題・回答投稿方法
                                 <br>
-                                表示・非表示で確認できる！！
+                                各欄に各々の内容を記載する
                             </p>
                         </div>
                     </div>
                     <div class="howUse-card">         <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/空背景.png" alt="使い方1">
-                            <h3 class="howUse-title">使い方1つ目</h3>
+                            <img class="howUse-image" src="images/aicon2.png" alt="確認">
+                            <a href="confirm.php" class="howUse-title">確認</a>
                             <p class="howUse-text">
-                                使い方1つ目
+                                課題・回答確認方法
                                 <br>
-                                です！！
+                                表示を押すと回答が見える
                             </p>
                         </div>
                     </div>
                     <div class="howUse-card">         <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/空背景.png" alt="使い方1">
-                            <h3 class="howUse-title">使い方1つ目</h3>
+                            <img class="howUse-image" src="images/BBS2.png" alt="掲示板">
+                            <a href="BBS.php" class="howUse-title">掲示板</a>
                             <p class="howUse-text">
-                                使い方1つ目
+                                掲示板
                                 <br>
-                                です！！
+                                何を追加したか確認できる
                             </p>
                         </div>
                     </div>
                     <div class="howUse-card">         <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/空背景.png" alt="使い方1">
-                            <h3 class="howUse-title">使い方1つ目</h3>
+                            <img class="howUse-image" src="images/suk.png" alt="スケジュール表">
+                            <a href="time.php" class="howUse-title">スケジュール表</a>
                             <p class="howUse-text">
-                                使い方1つ目
+                                スケジュール表の使用方法
                                 <br>
-                                です！！
+                                用事と日付を記入
                             </p>
                         </div>
                     </div>
                     <div class="howUse-card">         <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/空背景.png" alt="使い方1">
-                            <h3 class="howUse-title">使い方1つ目</h3>
+                            <img class="howUse-image" src="images/logout.png" alt="ログアウト">
+                            <a href="logout.php" class="howUse-title">ログアウト</a>
                             <p class="howUse-text">
-                                使い方1つ目
+                                ログアウト
                                 <br>
-                                です！！
+                                再度使用する場合はログインが必要
                             </p>
                         </div>
                     </div>

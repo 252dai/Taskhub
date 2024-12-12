@@ -1,0 +1,86 @@
+/* 全体のスタイル */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2a2a40;
+    color: #333;
+}
+h1 {
+    text-align: center;
+    color: #6a5acd;
+    margin-top: 20px;
+}
+
+
+/* カレンダー部分 */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+th, td {
+    width: 14.2%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #6a5acd;
+    color: white;
+    font-weight: bold;
+}
+td {
+    background-color: #f9f9f9;
+}
+.event {
+    background-color: #5cdd95;
+    font-weight: bold;
+    border: 2px solid #379683;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3)
+}
+
+/* フォーム部分 */
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #6a5acd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #87cefa;
+}
+form input[type="date"],
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a5acd;
+    color: #87cefa;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+form button:hover {
+    background-color: #5a4cbf;
+    transform: scale(1.05);
+}
