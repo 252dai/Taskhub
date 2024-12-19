@@ -84,3 +84,8 @@ form button:hover {
     background-color: #5a4cbf;
     transform: scale(1.05);
 }
+.event-content {
+    font-size: 0.9em;
+    margin-top: 5px;
+    color: #555;
+}

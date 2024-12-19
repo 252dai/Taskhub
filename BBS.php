@@ -1,4 +1,11 @@
 <?php
+session_start();
+if(!isset($_SESSION['username'])){
+    $host = $_SERVER['HTTP_HOST'];
+    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+    header("Location: login.php");
+    exit;
+}
 $comment_array = array();
 $errMess = array();
 //DB接続
