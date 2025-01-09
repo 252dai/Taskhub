@@ -48,7 +48,7 @@ if(!isset($_SESSION['username'])){
                 <div class="how-use-wrapper">         <!--カードを囲む要素-->
                     <div class="howUse-card"><!--1枚目-->         <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/home2.png" alt="home">
+                            <img class="howUse-image" src="images/home_icon.png" alt="home">
                             <a href="projectVer1.php" class="howUse-title">ホームページ</a>
                             <p class="howUse-text">
                                 このサイトの使い方
@@ -59,7 +59,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="howUse-card">  <!--2枚目-->       <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/aicon1.png" alt="投稿">
+                            <img class="howUse-image" src="images/register_icon.png" alt="投稿">
                             <a href="register.php" class="howUse-title">課題・回答投稿</a>
                             <p class="howUse-text">
                                 課題・回答投稿方法
@@ -70,7 +70,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="howUse-card">         <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/aicon2.png" alt="確認">
+                            <img class="howUse-image" src="images/confirm_icon.png" alt="確認">
                             <a href="confirm.php" class="howUse-title">確認</a>
                             <p class="howUse-text">
                                 課題・回答確認方法
@@ -81,7 +81,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="howUse-card">         <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/BBS2.png" alt="掲示板">
+                            <img class="howUse-image" src="images/BBS_icon.png" alt="掲示板">
                             <a href="BBS.php" class="howUse-title">掲示板</a>
                             <p class="howUse-text">
                                 掲示板
@@ -92,7 +92,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="howUse-card">         <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/suk.png" alt="スケジュール表">
+                            <img class="howUse-image" src="images/schedul_icon.png" alt="スケジュール表">
                             <a href="time.php" class="howUse-title">スケジュール表</a>
                             <p class="howUse-text">
                                 スケジュール表の使用方法
@@ -103,7 +103,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="howUse-card">         <!--一つのカードの大枠-->
                         <div class="how-use-inner">
-                            <img class="howUse-image" src="images/logout.png" alt="ログアウト">
+                            <img class="howUse-image" src="images/logout_icon.png" alt="ログアウト">
                             <a href="logout.php" class="howUse-title">ログアウト</a>
                             <p class="howUse-text">
                                 ログアウト
